@@ -3,10 +3,10 @@
 
 <head>
     <style>
-        span, div {
+        /* span, div {
             background: yellow;
             border: 1px solid red;
-        }
+        } */
 
         .top {
             position: relative;
@@ -51,6 +51,18 @@
         #child {
             position: absolute;
             right: 0;
+        }
+
+        .float-container {
+            width: 320px;
+            border: 2px solid #09c;
+        }
+
+        .float-container img{
+            float: left;
+            margin: 5px;
+            padding: 5px;
+            border: 2px solid #90c;
         }
     </style>
 </head>
@@ -121,6 +133,14 @@
     </div>
 
     <br><br><br>
+
+    <div>
+        <div class="float-container">
+            <img width="200" src="https://cdn-share-sprites.flaticon.com/pack/15/15685/15685759-medical_3x2.jpg">
+            한글로쓰며는 밀어지는 이유가 뭐야 ㄹ라룬ㄹ뉘루눌ㄴ뭏뭏ㄶㅁ룬루눌내ㅜㄹ눌눟ㄴ
+            ㄹ눙훈후눟누후니후니ㅜ히누히눟니휘누
+        </div>
+    </div>
 
     <div>
         <div id="fixed">fixed</div>
