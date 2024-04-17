@@ -2,7 +2,57 @@
 <html lang="en">
 
 <head>
-    
+    <style>
+        span, div {
+            background: yellow;
+            border: 1px solid red;
+        }
+
+        .top {
+            position: relative;
+            top: 5px;
+            z-index: 1;
+        }
+
+        .right {
+            position: relative;
+            right: 5px;
+        }
+
+        .bottom {
+            position: relative;
+            bottom: 5px;
+        }
+
+        .left {
+            position: relative;
+            left: 5px;
+        }
+
+        #fixed {
+            background: yellow;
+            position: fixed;
+            right: 0;
+        }
+
+        #absolute {
+            background: green;
+            position: absolute;
+            right: 0;
+        }
+
+        #parent {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+        }
+
+        #child {
+            position: absolute;
+            right: 0;
+        }
+    </style>
 </head>
 <body>
     <h1>목록, 리스트에 대한 실습입니다.</h1>
@@ -51,6 +101,33 @@
         </tr>
     </table>
 
-    
+    <span class="top">span1</span>
+    <span class="right">span2</span>
+    <span class="bottom">span3</span>
+    <div class="left">div1</div>
+
+    <span>span1</span>
+    <span>span2</span>
+    <span>span3</span>
+    <div>div1</div>
+
+    <br><br><br>
+
+    <div>
+        <div id="absolute">absolute</div>
+    </div>
+    <div id="parent">
+        <div id="child">children</div>
+    </div>
+
+    <br><br><br>
+
+    <div>
+        <div id="fixed">fixed</div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br><br>
 </body>
 </html>
