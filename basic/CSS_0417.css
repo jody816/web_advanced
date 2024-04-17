@@ -1,0 +1,30 @@
+/* ID 선택자 */
+#title {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* 클래스 선택자 */
+.description {
+    color: grey;
+}
+
+/* 태그 선택자 */
+p {
+    font-style: italic;
+}
+
+/* 자식 선택자 */
+div p {
+    color: red;
+}
+
+div p .bg-yellow {
+    background-color: yellow;
+}
+
+.parent {
+    background-color: yellow;
+    color: blue;
+    padding: 20px;
+}

@@ -1,0 +1,17 @@
+.nav-items div {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 306px;
+}
+
+.nav-items {
+    display: inline;
+}
+
+.nav-items span img {
+    padding-right: 6px;
+}
