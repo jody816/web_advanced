@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코딩하는 하프물범</title>
+    <!-- css가 두 개면 아래 것이 위의 것을 덮어져서 사용됨 -->
+    <link rel="stylesheet" href="profile-style.css">
+</head>
+<body>
+    <header>
+        <nav style="margin: auto;">
+            <div class="logo">
+                <img width="60" src="images/logo 1.png">
+            </div>
+            <div class="nav-items">
+                <div>Home</div>
+                <div>About</div>
+                <div>Tech Stack</div>
+                <div>Projects</div>
+                <div>Contact</div>
+                <span>
+                    <img width="20" src="https://cdn-icons-png.flaticon.com/128/733/733609.png">
+                    <img width="20" src="https://cdn-icons-png.flaticon.com/128/3669/3669691.png">
+                    <img width="20" src="https://cdn-icons-png.flaticon.com/128/4494/4494489.png">
+                </span>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- 안녕하세요~ -->
+    <section>
+        <div class="intro">
+            <div class="intro-write" id="letter">
+                <p>Hi 👋,<br>My name is<br>
+                <a style="background: linear-gradient(to right, #3f4eeb, #c514a8); background-clip: text;  -webkit-text-fill-color: transparent;">JaeHyeon Oh</a><br>
+                I build things for web</p>
+            </div>
+            <div class="intro-image">
+                <img width="220" src="/basic/images/image.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- 테크 스택 -->
+    <section>
+        <div class="tech">
+            <div class="tech-intro">
+                <p>My Tech Stack</p>
+            </div>
+            <div class="tech-explain">
+                <p>Technologies I’ve been working with recently</p>
+            </div>
+
+            <div class="tech-stack">
+                <div>
+                    <img width="100" src="https://cdn-icons-png.flaticon.com/128/226/226777.png">
+                    <img width="100" src="https://cdn-icons-png.flaticon.com/128/174/174854.png">
+                    <img width="100" src="https://cdn-icons-png.flaticon.com/128/5968/5968313.png">
+                </div>
+                <div>
+                    <img width="100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUKbe3Vg5PJ4wpjlDUy-noAzkT0dqhknQR4TL86jNAKA&s">
+                    <img width="100" src="https://cdn.iconscout.com/icon/free/png-256/free-aws-1869025-1583149.png?f=webp">
+                    <img width="100" src="https://cdn-icons-png.flaticon.com/128/733/733609.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 프젝 -->
+    <section>
+        <div class="project">
+            <div class="project-intro">
+                <p>Projects</p>
+            </div>
+            <div class="project-explain">
+                <p>Things I’ve built so far</p>
+            </div>
+
+            <div class="project-list">
+                프로젝트들
+                <div class="image-container">
+                    <img width="70" src="/basic/images/홈화면.png">
+                    <div class="overlay">
+                        <a>더블SS401~ 화이팅!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav class="nav-footer">
+            <div id="footer-first-div">
+                <div>
+                    <img width="60px" src="/basic/images/logo 2.png">
+                </div>
+                <div id="footer-first-div">
+                    <div>
+                        +82 8403 1017
+                    </div>
+                    <div>
+                        ojh9816@gmail.com
+                    </div>
+                </div>
+                <div>
+                    <img width="20" src="https://cdn-icons-png.flaticon.com/128/733/733609.png">
+                    <img width="20" src="https://cdn-icons-png.flaticon.com/128/3669/3669691.png">
+                    <img width="20" src="https://cdn-icons-png.flaticon.com/128/4494/4494489.png">
+                </div>
+            </div>
+            <div>
+                <hr />
+            </div>
+            <div class="footer-third-div">
+                <div style="width: 500px;">
+                    <a>Home</a>
+                    <a>About</a>
+                    <a>Tech Stack</a>
+                    <a>Projects</a>
+                    <a>Contact</a>
+                </div>
+                <div>
+                    <a>Designed and built by <a>Pavan MG</a> with Love & Coffee</a>
+                </div>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
+
+
+<!-- span은 해당 태그 안에만 설정을 주고 싶을 때! -->
+<!-- 강사님은 span 태그에 css를 적용하여 사용한듯...? -->
+<!-- 강사님은 ul과 li를 사용하여 스택 이미지를 넣었음 (list-style: none) -->
+<!-- 강사님은 프로젝트 부분은 article 태그를 이용했고,
+    걍 졸라 어렵네 -->
+<!-- a 태그는 링크! -->
+<!-- a 태그에 href에 tel:+12345667 이런 식으로 넣어주면 모바일에서 열었으면 바로 전화창으로 넘어갔을 것! -->
+<!-- 바디에 패딩을 설정해주어서 글자가 뭉게지는? 것을 방지함 -->
+<!-- max-width: 최대로 늘어나는 길이를 설정,
+    min-width: 최소로 줄어들 수 있는 길이를 설정 -->
+
+<!-- 마진 0 오토 / 맥스위드 1228 / 민위드480 / 패딩 0 20px -->
+<!-- 마진보단 패딩...? -->
+<!-- 어라운드랑 이븐리 차이: 어라운드는 바깥 여백이 조금 짧다 정도...? -->
+<!-- flex-wrap: wrap -> 글자가 우그러지지 않고 밑으로 떨어짐..? -->
+<!-- 강사님은 헤더에 h1과 이미를 넣었음 -->
+<!-- 보더 컬러 말고 background: 라이너그래디언트(deg(degree 각도) 컬러 컬러 100%) 백그라운드클립텍스트 컬러transparent -->
+<!-- header(할아버지) h1(아버지) span(나) -->
+<!-- gap은? 여백을 설정하는 것 (간격) 강사님한테선 스택 리스트끼리의 ㅇㅇ
+    column과 row 갭이 있어서 가로와 세로 간격도 설정 가능! -->
+<!-- 강사님은 그리드로 프로젝트를 꾸미셨는데,
+    grid-template-columns: repeat(3, 1fr) : 3개의 요소를 똑같은 비율로 두겠다..?
+    repeat를 하지 않고 2fr 1fr을 하면 2:1이라는 의미...?
+    별일 없으면 fr을 쓰자! -->
+<!-- box-shadow: 그림자 넣는 거인듯(크롬에서 그림자 설정할 수 있도록 기능이 제공됨) rgba(0, 0, 0, 0.2) -->
+<!-- border-top-left-radius를 이용해서 원하는 부분의 굴곡 설정 가능 -->
+<!-- 백그라운드사이즈를 커버로 하면 긴쪽이 잘림, 컨테인은 긴쪽을 기준으로 잡음 -->
+<!-- 백그라운드-리피트는 뭐지 -->
+<!-- 묶어서 플랙스를 쓰던가, 패딩을 넣어서 갭을 주자 -->

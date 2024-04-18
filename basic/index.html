@@ -2,7 +2,69 @@
 <html lang="en">
 
 <head>
-    
+    <style>
+        span, div {
+            background: yellow;
+            border: 1px solid red;
+        }
+
+        .top {
+            position: relative;
+            top: 5px;
+            z-index: 1;
+        }
+
+        .right {
+            position: relative;
+            right: 5px;
+        }
+
+        .bottom {
+            position: relative;
+            bottom: 5px;
+        }
+
+        .left {
+            position: relative;
+            left: 5px;
+        }
+
+        #fixed {
+            background: yellow;
+            position: fixed;
+            right: 0;
+        }
+
+        #absolute {
+            background: green;
+            position: absolute;
+            right: 0;
+        }
+
+        #parent {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+        }
+
+        #child {
+            position: absolute;
+            right: 0;
+        }
+
+        .float-container {
+            width: 320px;
+            border: 2px solid #09c;
+        }
+
+        .float-container img{
+            float: left;
+            margin: 5px;
+            padding: 5px;
+            border: 2px solid #90c;
+        }
+    </style>
 </head>
 <body>
     <h1>목록, 리스트에 대한 실습입니다.</h1>
@@ -25,7 +87,16 @@
         <li>3</li>
     </ul>
 
-    <!-- table -> tr -> td -->
+    <!-- 고정을 시키면 맨 밑에다가 하면
+    디폴트 값이 -300,000일 수 있고,
+    여기다가 했더니 중간에 나옴.
+    때문에, 내가 값을 설정해줄
+    필요가 있다고 생각함! -->
+    <div>
+        <div id="fixed">fixed</div>
+    </div>
+
+    <!-- table -> tr -> td -->    
     <table>
         <tr>
             <td>1</td>
@@ -51,6 +122,42 @@
         </tr>
     </table>
 
-    
+    <span class="top">span1</span>
+    <span class="right">span2</span>
+    <span class="bottom">span3</span>
+    <div class="left">div1</div>
+
+    <span>span1</span>
+    <span>span2</span>
+    <span>span3</span>
+    <div>div1</div>
+
+    <br><br><br>
+
+    <div>
+        <div id="absolute">absolute</div>
+    </div>
+    <div id="parent">
+        <div id="child">children</div>
+    </div>
+
+    <br><br><br>
+
+    <div>
+        <div class="float-container">
+            <img width="200" src="https://cdn-share-sprites.flaticon.com/pack/15/15685/15685759-medical_3x2.jpg">
+            한글로쓰며는 밀어지는 이유가 뭐야 ㄹ라룬ㄹ뉘루눌ㄴ뭏뭏ㄶㅁ룬루눌내ㅜㄹ눌눟ㄴ
+            ㄹ눙훈후눟누후니후니ㅜ히누히눟니휘누
+            <!-- 영어를 asdasdafa 이렇게 길게 썼는데
+            글자가 div를 넘어서 쭉 됐음.
+            하지만 띄어쓰기를 해주니까 해결이 되는 걸
+            볼 수 있었음 -->
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br><br>
 </body>
 </html>
