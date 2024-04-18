@@ -23,5 +23,5 @@ jobs:
           aws s3 cp \
             --recursive \
             --region ap-northeast-2 \
-            ./basic/myPage/ s3://{pda0419-my-pf}
+            ./basic/myPage/ s3://pda0419-my-pf
             # ./ 경로 설정
