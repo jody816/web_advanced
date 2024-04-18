@@ -1,0 +1,461 @@
+/* 추가 */
+body {
+    /* 
+    요소에 최대 길이를 주고, margin: 0 auto를 주면,
+    margin 좌우가 auto로 적용되며
+    가운데 정렬이 된다.
+    */
+
+    margin: 0 auto;
+    max-width: 1228px;
+    padding: 0 20px;
+}
+
+/* 헤더 처음 ------------------------------- */
+
+header {
+    /* 위아래 간격 주기 */
+    padding-top: 220px;
+    padding-bottom: 300px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #42446e;
+    font-size: 58px;
+    font-style: normal;
+
+    /* 글씨 두께 */
+    font-weight: 700;
+
+    /* 텍스트의 크기가 아닌 그 약간 뭐랄까
+       컨텐트가 위아래로 줄어드는 느낌? */
+    line-height: 70px; /* 120.69% */
+
+    /* 기존 텍스트 간의 상하좌우로 간격을
+       조정한다고 봐도 될듯 */
+    letter-spacing: -1px;
+}
+
+/* 아래의 클래스는 전체가 투명인데
+   텍스트에만 색이 적용이 되는 것 */
+header h1 span {
+    /* 글씨에 그라데이션을 주는 효과 */
+    background: linear-gradient(120deg, #13b0f5 -2.06%, #e35ef7 100%);
+    
+    /* 요소의 배경이 적용되는 영역을 지정함 */
+    background-clip: text;
+
+    /* 글자 색을 투명하게 */
+    color: transparent;
+}
+
+/* 헤더 끝 --------------------------------- */
+
+/* 상단 nav 처음 --------------------------- */
+
+/* 강사님 코드 */
+.top-nav {
+    padding: 40px 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* 기존 코드 */
+/* .logo {
+    display: inline-block;
+    margin-right: 100px;
+    margin-left: 0;
+} */
+/* 강사님 코드 */
+.top-logo {
+    width: 97px;
+    height: 59px;
+}
+
+/* 기존 코드 */
+/* .nav-items {
+    display: inline-block;
+    margin-bottom: 130px;
+} */
+/* 강사님 코드 */
+.nav-items {
+    display: flex;
+    
+    /* 가로 가운데 정렬 */
+    justify-content: space-between;
+
+    /* 세로 가운데 정렬 */
+    align-items: center;
+
+    /* flex-item 사이의 간격 */
+    gap: 50px;
+}
+
+/* 기존 코드 */
+/* .nav-items div {
+    display: inline-block;
+    margin-left: 64px;
+} */
+/* 강사님 코드 */
+.nav-items li {
+    /* 상단 메뉴 글자에 대한 스타일 */
+    color: #666;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px; /* 130% */
+}
+
+/* 기존 코드 */
+/* .nav-items span {
+    justify-content: space-between;
+}
+
+.nav-items span img {
+    margin-right: 0;
+    margin-left: 12px;
+} */
+/* 강사님 코드 */
+.top-sns {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.top-sns img {
+    width: 30px;
+    align-items: center;
+}
+
+/* 상단 nav 끝 ----------------------- */
+
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    /* border: solid black; */
+    justify-content: right;
+}
+
+.intro-write {
+    width: 500px;
+    /* border: solid gray; */
+}
+
+.intro-image {
+    width: 400px;
+    /* border: solid red; */
+}
+
+.intro-image img {
+    border-radius: 230px;
+    border: 9px solid;
+}
+
+/* 기술 스택 섹션 처음 -------------------- */
+
+/* 강사님 코드 */
+.section-text {
+    padding-bottom: 130px;
+}
+/* 강사님 코드 */
+.section-text h2 {
+    color: #42446e;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+/* 강사님 코드 */
+.section-text p {
+    color: #666;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* 기존 코드 */
+/* .tech {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    border: solid indianred;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-intro {
+    text-align: center;
+    width: 300px;
+}
+
+.tech-intro p {
+    height: 0px;
+    font-size: x-large;
+    font-weight: bolder;
+    color: #360684;
+}
+
+.tech-explain {
+    text-align: center;
+    width: 400px;
+}
+
+.tech-explain p {
+    font-size: small;
+    height: 60px;
+}
+
+.tech-stack {
+    height: 200px;
+    width: 600px;
+    border: solid rgb(63, 150, 227);
+} */
+
+/* 강사님 코드 */
+.tech-stacks {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+/* 강사님 코드 (li 말고 후에 flex나 grid로도 연습해보자) */
+.tech-stacks li {
+    text-align: center;
+}
+/* 강사님 코드 (이건 왜 있지?) */
+#tech-stack {
+    padding-bottom: 300px;
+}
+
+/* 기술 스택 섹션 끝 -------------------- */
+
+/* 프로젝트 섹션 처음 ------------------------ */
+
+/* 기존 코드 */
+/* .project {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    border: solid indianred;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-intro {
+    text-align: center;
+    width: 300px;
+}
+
+.project-intro p {
+    height: 0px;
+    font-size: x-large;
+    font-weight: bolder;
+    color: #360684;
+}
+
+.project-explain {
+    text-align: center;
+    width: 400px;
+}
+
+.project-explain p {
+    font-size: small;
+    height: 60px;
+}
+
+.project-list {
+    height: 200px;
+    width: 600px;
+    border: solid rgb(63, 150, 227);
+} */
+
+/* 강사님 코드 (id는 이제 큰 틀에 적용하거나,
+   변하면 안되는(?) 그런 중요한 거에 적용하고
+   웬만하면 클래스를 사용하고,
+   id는 지양! */
+#project-section {
+    padding-bottom: 300px;
+}
+
+.project-item {
+    display: grid;
+    align-items: center;
+
+    /* 1fr만큼 3개의 열을 생성한다는 의미,
+       fr은 fractional unit의 약자로 비율적으로 나누는 데 사용되고,
+       숫자는 열의 크기를 정해준다고 생각하면 될듯*/
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.project-thumbnail {
+    /* 부모 요소의 너비를 기준으로 100%의
+       너비를 가지도록 지정하는 것을 의미 */
+    width: 100%;
+    height: 256px;
+
+    /* 위쪽 모서리 둥글게 */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    /* 배경 이미지 가운데 정렬, 가득차게 */
+
+    /* ↓ 이렇게 하면 생성한 열의 모든 이미지가 같게 되는 거 같음 */
+    /* background-image: url("https://source.unsplash.com/random/400×400"); */
+    background-position: center;
+    background-size: cover;
+}
+
+.project-content {
+    padding: 30px;
+    /* 세로 간격(gap)을 일정하게 주기 위해 flex 적용 */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.project-content h4 {
+    color: #42446e;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.project-link a {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26;
+    text-decoration-line: underline;
+}
+
+.project-desc {
+    color: #666;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px; /* 144.444% */
+}
+
+.project-tech-stack {
+    color: #42446e;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+/* 프로젝트 섹션 끝 ------------------------ */
+
+/* footer 처음 ------------------------------ */
+
+/* 기존 코드 */
+/* #letter p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-footer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-first-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-third-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-third-div div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-third-div div a {
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* 강사님 코드 */
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    padding-bottom: 50px;
+}
+
+.footer-upper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 97px;
+    height: 59px;
+}
+
+.footer-contact {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    
+    /* 텍스트 스타일 */
+    color: #42446e;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.footer-contact a {
+    /* 기본속성으로 적용되어 있는 언더라인 제거 */
+    color: #42446e;
+    text-decoration: none;
+}
+
+/* footer 끝 --------------------------------------- */
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 반투명한 검은색 */
+    opacity: 0; /* 기본적으로 숨김 */
+    transition: opacity 0.3s ease; /* 페이드 효과를 위한 transition */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay a {
+    color: white; /* 텍스트 색상 */
+    font-size: 16px; /* 텍스트 크기 */
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+.image-container:hover .overlay {
+    opacity: 1; /* 호버 시 보이도록 함 */
+}
