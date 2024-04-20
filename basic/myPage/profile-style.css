@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'TTWanjudaedunsancheB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjudaedunsancheB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 /* 추가 */
 body {
     /* 
@@ -9,6 +16,12 @@ body {
     margin: 0 auto;
     max-width: 1228px;
     padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 12px;
+    }
 }
 
 /* 헤더 처음 ------------------------------- */
@@ -43,6 +56,7 @@ header h1 {
 /* 아래의 클래스는 전체가 투명인데
    텍스트에만 색이 적용이 되는 것 */
 header h1 span {
+    font-family: TTWanjudaedunsancheB;
     /* 글씨에 그라데이션을 주는 효과 */
     background: linear-gradient(120deg, #13b0f5 -2.06%, #e35ef7 100%);
     
@@ -51,6 +65,19 @@ header h1 span {
 
     /* 글자 색을 투명하게 */
     color: transparent;
+}
+
+header img {
+    width: 280px;
+    height: 280px;
+    border: 7px solid transparent;
+    border-radius: 70%;
+    background-image: linear-gradient(#fff, #fff),
+        linear-gradient(120deg, #13b0f5 -2.06%, #e35ef7 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-image-slice: 1;
+    overflow: hidden;
 }
 
 /* 헤더 끝 --------------------------------- */
@@ -76,6 +103,17 @@ header h1 span {
     width: 97px;
     height: 59px;
 }
+
+@media (max-width: 768px) {
+    .top-nav {
+      padding: 20px 10px;
+    }
+  
+    .top-logo {
+      width: 95px;
+      height: 60px;
+    }
+  }
 
 /* 기존 코드 */
 /* .nav-items {
@@ -109,6 +147,24 @@ header h1 span {
     font-weight: 500;
     line-height: 26px; /* 130% */
 }
+
+.nav-items.mobile {
+    display: none;
+  }
+
+@media (max-width: 768px) {
+    .nav-items {
+      display: none;
+    }
+    .nav-items.mobile {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    .nav-items li {
+      font-size: 16px;
+    }
+  }
 
 /* 기존 코드 */
 /* .nav-items span {
@@ -281,7 +337,7 @@ header h1 span {
     padding-bottom: 300px;
 }
 
-.project-item {
+.project-items {
     display: grid;
     align-items: center;
 
@@ -290,6 +346,11 @@ header h1 span {
        숫자는 열의 크기를 정해준다고 생각하면 될듯*/
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
+}
+
+.project-item {
+    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
 }
 
 .project-thumbnail {
@@ -305,7 +366,7 @@ header h1 span {
     /* 배경 이미지 가운데 정렬, 가득차게 */
 
     /* ↓ 이렇게 하면 생성한 열의 모든 이미지가 같게 되는 거 같음 */
-    /* background-image: url("https://source.unsplash.com/random/400×400"); */
+    background-image: url("https://source.unsplash.com/random/400×400");
     background-position: center;
     background-size: cover;
 }
@@ -337,7 +398,7 @@ header h1 span {
     
     font-size: 16px;
     font-weight: 400;
-    line-height: 26;
+    line-height: 26px;
     text-decoration-line: underline;
 }
 
@@ -484,3 +545,33 @@ footer .footer-links {
 .image-container:hover .overlay {
     opacity: 1; /* 호버 시 보이도록 함 */
 }
+
+
+
+/* pc */
+/* @media (max-width: 768px) {
+    .nav-items {
+        display: none;
+    }
+} */
+/* mobile */ /* html에선 nav-items mobile */
+/* @media (max-width: 768px) {
+    .nav-items.mobile {
+        display: none;
+    }
+} */
+
+/* 
+   top-logo도 width와 height에 값을 줘서 바꿀 수 있음
+   갭도 줄여주고 ~~~
+
+   첫번 째 섹션에서 플렉스 리다이렉션 컬럼 리버스를 주면 사진 나오고 멘트 나오고 ㅇㅇ
+*/
+
+
+/* 폰트는 맨위에 놓아서 적용,
+   ↓ *표는 전체 요소에 적용 */
+
+/* * {
+    font-family: ;
+} */
